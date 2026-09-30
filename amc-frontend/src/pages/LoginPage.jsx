@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { login } from '../services/api';
 import { useToast } from '../context/ToastContext';
@@ -38,7 +38,7 @@ export default function LoginPage() {
         <div className="login-brand-icon">A</div>
         <div className="login-brand-name">AMC Bank</div>
         <div className="login-brand-sub">
-          India's next-generation digital banking platform â€” secure, fast, and built for the modern era.
+          Next-generation digital banking platform — secure, fast, and built for the modern era.
         </div>
         <div className="login-features">
           {[
@@ -80,13 +80,13 @@ export default function LoginPage() {
               type="password"
               value={password}
               onChange={e => setPassword(e.target.value)}
-              placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
+              placeholder="••••••••"
               required
             />
           </div>
 
           <button className="btn btn-primary btn-full btn-lg" type="submit" disabled={loading}>
-            {loading ? 'â³ Signing Inâ€¦' : 'ðŸ” Sign In'}
+            {loading ? '⏳ Signing In...' : '🔒 Sign In'}
           </button>
         </form>
 
@@ -94,8 +94,8 @@ export default function LoginPage() {
 
         <div style={{ background: 'var(--bg-input)', borderRadius: 'var(--radius)', padding: '12px 16px', fontSize: 'var(--text-xs)', color: 'var(--text-secondary)' }}>
           <div style={{ fontWeight: 700, marginBottom: 6, color: 'var(--text-primary)' }}>Demo Credentials</div>
-          <div>ðŸ”‘ <strong>Admin:</strong> admin / admin123</div>
-          <div style={{ marginTop: 4 }}>ðŸ‘¤ <strong>Customer:</strong> Khushi@example.com / customer123</div>
+          <div>🔑 <strong>Admin:</strong> admin / admin123</div>
+          <div style={{ marginTop: 4 }}>👤 <strong>Customer:</strong> Khushi@example.com / customer123</div>
         </div>
       </div>
     </div>
