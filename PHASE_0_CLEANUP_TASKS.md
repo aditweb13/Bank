@@ -22,7 +22,7 @@
 | # | Section | Tasks | Done | Status |
 |---|---------|-------|------|--------|
 | 1 | Repository hygiene | 9 | 8 | 🟦 |
-| 2 | Project rename and branding | 6 | 0 | ⬜ |
+| 2 | Project rename and branding | 6 | 6 | ✅ |
 | 3 | Configuration unification | 8 | 0 | ⬜ |
 | 4 | Secrets and environment handling | 9 | 0 | ⬜ |
 | 5 | Data consistency fixes | 8 | 0 | ⬜ |
@@ -32,7 +32,7 @@
 | 9 | Dockerization and one-command startup | 7 | 0 | ⬜ |
 | 10 | Documentation consolidation | 7 | 0 | ⬜ |
 | 11 | Phase sign-off | 5 | 0 | ⬜ |
-| | **Total** | **80** | **8** | |
+| | **Total** | **80** | **14** | |
 
 ---
 
@@ -73,12 +73,12 @@ All must be true before starting Phase 1:
 
 **Why:** "AMC Bank" implies you are a licensed bank. Pick a neutral product name before it spreads further.
 
-- [ ] **2.1** Choose a working product name (e.g. `PayLedger`, `SettleKit`; check domain and trademark availability roughly).
-- [ ] **2.2** Rename folders only if cheap (`amc-backend` → `backend`, `amc-frontend` → `frontend`); update `docker-compose.yml` paths accordingly.
-- [ ] **2.3** Change Java package root and Maven `groupId/artifactId` (use IDE refactor, not find/replace).
-- [ ] **2.4** Update UI strings, page titles, logo/favicon text, and email templates.
-- [ ] **2.5** Rename Docker containers, volumes, and DB name (see Section 3 for the DB name decision).
-- [ ] **2.6** Update README title and badges.
+- [x] **2.1** Choose a working product name (e.g. `PayLedger`, `SettleKit`; check domain and trademark availability roughly).
+- [x] **2.2** Rename folders only if cheap (`amc-backend` → `backend`, `amc-frontend` → `frontend`); update `docker-compose.yml` paths accordingly.
+- [x] **2.3** Change Java package root and Maven `groupId/artifactId` (use IDE refactor, not find/replace).
+- [x] **2.4** Update UI strings, page titles, logo/favicon text, and email templates.
+- [x] **2.5** Rename Docker containers, volumes, and DB name (see Section 3 for the DB name decision).
+- [x] **2.6** Update README title and badges.
 
 **Acceptance:** `grep -ri "amc" --include=*.java --include=*.jsx --include=*.yml --include=*.md .` returns only intentional references (e.g. the changelog).
 
@@ -265,4 +265,4 @@ All must be true before starting Phase 1:
 
 | Date | Done today | Blockers | Next |
 |------|------------|----------|------|
-| 2026-10-03 | Completed Discovery (Step 0) & Section 1 (Tasks 1.1-1.8) | None | Section 2 - Project rename and branding |
+| 2026-10-03 | Completed Discovery (Step 0), Section 1 (Hygiene), & Section 2 (Rename & Branding) | None | Section 3 - Configuration unification |
