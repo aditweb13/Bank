@@ -1,3 +1,8 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
 # Node / React
 node_modules/
 dist/
@@ -15,16 +20,15 @@ bin/
 .project
 .settings/
 .idea/
+.vscode/
 *.iml
-.mvn/
 *.class
+
+# Docker & Persistence
+pgdata/
 
 # OS & Temp
 .DS_Store
 Thumbs.db
 .tempmediaStorage/
 scratch/
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local

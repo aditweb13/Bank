@@ -21,7 +21,7 @@
 
 | # | Section | Tasks | Done | Status |
 |---|---------|-------|------|--------|
-| 1 | Repository hygiene | 9 | 0 | ⬜ |
+| 1 | Repository hygiene | 9 | 8 | 🟦 |
 | 2 | Project rename and branding | 6 | 0 | ⬜ |
 | 3 | Configuration unification | 8 | 0 | ⬜ |
 | 4 | Secrets and environment handling | 9 | 0 | ⬜ |
@@ -32,7 +32,7 @@
 | 9 | Dockerization and one-command startup | 7 | 0 | ⬜ |
 | 10 | Documentation consolidation | 7 | 0 | ⬜ |
 | 11 | Phase sign-off | 5 | 0 | ⬜ |
-| | **Total** | **80** | **0** | |
+| | **Total** | **80** | **8** | |
 
 ---
 
@@ -55,14 +55,14 @@ All must be true before starting Phase 1:
 
 **Files:** repo root, `.gitignore`, `.gitattributes`
 
-- [ ] **1.1** Create a full backup: zip the current project and copy it somewhere outside the repo.
-- [ ] **1.2** Run `git status` and confirm everything is committed. Tag the current state `v0.1.0-baseline`.
-- [ ] **1.3** Rename the uploaded `_gitignore` to `.gitignore` (the leading underscore means Git is currently **not** using it).
-- [ ] **1.4** Make sure `.gitignore` covers: `node_modules/`, `target/`, `dist/`, `.env`, `.env.*` (but keep `.env.example`), `*.log`, `.idea/`, `.vscode/` (optional), `.classpath`, `.project`, `.settings/`, `pgdata/`.
-- [ ] **1.5** Search git history for committed secrets: `git log -p | grep -iE "password|secret|jwt"`. List anything found (rotate it in Section 4).
-- [ ] **1.6** Remove already-tracked junk: `git rm -r --cached node_modules target dist` if present.
-- [ ] **1.7** Add `.gitattributes` (`* text=auto eol=lf`) so Windows/Eclipse/VS Code stop causing line-ending diffs.
-- [ ] **1.8** Add `.editorconfig` (UTF-8, LF, 2 spaces for JS/YAML, 4 for Java).
+- [x] **1.1** Create a full backup: zip the current project and copy it somewhere outside the repo.
+- [x] **1.2** Run `git status` and confirm everything is committed. Tag the current state `v0.1.0-baseline`.
+- [x] **1.3** Rename the uploaded `_gitignore` to `.gitignore` (the leading underscore means Git is currently **not** using it).
+- [x] **1.4** Make sure `.gitignore` covers: `node_modules/`, `target/`, `dist/`, `.env`, `.env.*` (but keep `.env.example`), `*.log`, `.idea/`, `.vscode/` (optional), `.classpath`, `.project`, `.settings/`, `pgdata/`.
+- [x] **1.5** Search git history for committed secrets: `git log -p | grep -iE "password|secret|jwt"`. List anything found (rotate it in Section 4).
+- [x] **1.6** Remove already-tracked junk: `git rm -r --cached node_modules target dist` if present.
+- [x] **1.7** Add `.gitattributes` (`* text=auto eol=lf`) so Windows/Eclipse/VS Code stop causing line-ending diffs.
+- [x] **1.8** Add `.editorconfig` (UTF-8, LF, 2 spaces for JS/YAML, 4 for Java).
 - [ ] **1.9** Delete `RUN_THIS_VERSION_FIRST.txt` after its content is merged into the README (Section 10).
 
 **Acceptance:** `git status` is clean after a build; `git ls-files | grep -E "node_modules|target/"` returns nothing.
@@ -257,10 +257,12 @@ All must be true before starting Phase 1:
 
 | Date | Decision | Reason | Link |
 |------|----------|--------|------|
-| | | | |
+| 2026-10-03 | Rebrand product to ARBC Bank | User explicitly selected ARBC Bank as official brand name | User prompt |
+| 2026-10-03 | Delete server.js mock server | Eliminate dual-backend divergence risk; Spring Boot is single source of truth | User prompt |
+| 2026-10-03 | Standardize DB name to arbc_bank_db | Unified database naming across Compose, Spring Boot, and documentation | User prompt |
 
 ## Daily log
 
 | Date | Done today | Blockers | Next |
 |------|------------|----------|------|
-| | | | |
+| 2026-10-03 | Completed Discovery (Step 0) & Section 1 (Tasks 1.1-1.8) | None | Section 2 - Project rename and branding |
