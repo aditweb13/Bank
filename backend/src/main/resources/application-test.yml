@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    baseline-on-migrate: false
+  main:
+    allow-bean-definition-overriding: true
+
+app:
+  jwt:
+    secret: ARBC-Bank-Testcontainers-Super-Secure-Secret-Key-For-Unit-Testing-256bits-HMAC
+    expiration-ms: 3600000
+    refresh-expiration-ms: 86400000
+  cors:
+    allowed-origins: http://localhost:5173

@@ -1,8 +1,8 @@
-name: AMC Bank CI Pipeline
+name: ARBC Bank CI Pipeline
 
 on:
   push:
-    branches: [ main, master, develop ]
+    branches: [ main, master, develop, chore/phase-0-cleanup ]
   pull_request:
     branches: [ main, master ]
 
@@ -15,7 +15,7 @@ jobs:
       postgres:
         image: postgres:16-alpine
         env:
-          POSTGRES_DB: amc_bank_customer_login
+          POSTGRES_DB: arbc_bank_db
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
         ports:
@@ -38,13 +38,13 @@ jobs:
           cache: maven
 
       - name: Build and Test Backend
-        working-directory: ./amc-backend
-        run: mvn clean verify -B
+        working-directory: ./backend
+        run: ./mvnw clean verify -B
         env:
-          SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/amc_bank_customer_login
+          SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/arbc_bank_db
           SPRING_DATASOURCE_USERNAME: postgres
           SPRING_DATASOURCE_PASSWORD: postgres
-          JWT_SECRET: AMC-Bank-Super-Secure-Ultra-Long-Secret-Key-For-Production-HMAC256-Bit-Security
+          JWT_SECRET: ARBC-Bank-CI-Test-Super-Secure-Ultra-Long-Secret-Key-HMAC256-Bit
 
   frontend-build-test:
     name: Frontend Build & Tests (React + Vitest)
@@ -59,16 +59,16 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: ./amc-frontend/package-lock.json
+          cache-dependency-path: ./frontend/package-lock.json
 
       - name: Install dependencies
-        working-directory: ./amc-frontend
-        run: npm install --legacy-peer-deps
+        working-directory: ./frontend
+        run: npm ci
 
       - name: Run Frontend Tests
-        working-directory: ./amc-frontend
-        run: npm run test
+        working-directory: ./frontend
+        run: npm test -- --run
 
       - name: Build Frontend Application
-        working-directory: ./amc-frontend
+        working-directory: ./frontend
         run: npm run build
