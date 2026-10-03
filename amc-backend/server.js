@@ -221,7 +221,7 @@ function seedDemoData() {
     customerId: demoCust.id,
     accountNumber: 'AC1002003002',
     beneficiaryName: 'Priya Patel',
-    bankName: 'AMC Bank',
+    bankName: 'ARBC Bank',
     ifscCode: 'AMCB0001234',
     status: 'VERIFIED',
     createdAt: new Date().toISOString()
@@ -230,7 +230,7 @@ function seedDemoData() {
   notifications.push({
     id: 1,
     recipient: demoCust.email,
-    title: 'Welcome to AMC Bank',
+    title: 'Welcome to ARBC Bank',
     message: 'Your savings account and loan portal are ready to use.',
     type: 'ACCOUNT',
     read: false,
@@ -1994,5 +1994,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`AMC Bank Enterprise Backend running on http://localhost:${PORT}`);
+  console.log(`ARBC Bank Enterprise Backend running on http://localhost:${PORT}`);
 });

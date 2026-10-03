@@ -1,6 +1,6 @@
-# AMC Bank – User Guide & System Architecture Documentation
+# ARBC Bank – User Guide & System Architecture Documentation
 
-Welcome to **AMC Bank Enterprise Digital Banking Platform**. This comprehensive guide details the application structure, technology stack, setup instructions, account login credentials, and end-to-end system workflows.
+Welcome to **ARBC Bank Enterprise Digital Banking Platform**. This comprehensive guide details the application structure, technology stack, setup instructions, account login credentials, and end-to-end system workflows.
 
 ---
 
@@ -20,7 +20,7 @@ Welcome to **AMC Bank Enterprise Digital Banking Platform**. This comprehensive 
 
 ## 1. Overview
 
-**AMC Bank** is a full-stack, enterprise-grade digital banking web application tailored for BFSI (Banking, Financial Services, and Insurance) operations. It features secure JWT-based authentication, strict role-based access control (`ROLE_ADMIN` vs `ROLE_CUSTOMER`), maker-checker approval workflows, fixed deposit lifecycle management, real-time fund transfers, and automated loan eligibility/EMI calculation.
+**ARBC Bank** is a full-stack, enterprise-grade digital banking web application tailored for BFSI (Banking, Financial Services, and Insurance) operations. It features secure JWT-based authentication, strict role-based access control (`ROLE_ADMIN` vs `ROLE_CUSTOMER`), maker-checker approval workflows, fixed deposit lifecycle management, real-time fund transfers, and automated loan eligibility/EMI calculation.
 
 ---
 

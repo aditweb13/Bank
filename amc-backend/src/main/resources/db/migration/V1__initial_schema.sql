@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS beneficiaries (
     customer_id BIGINT NOT NULL REFERENCES customers(id) ON DELETE CASCADE,
     account_number VARCHAR(30) NOT NULL,
     beneficiary_name VARCHAR(100) NOT NULL,
-    bank_name VARCHAR(100) DEFAULT 'AMC Bank',
+    bank_name VARCHAR(100) DEFAULT 'ARBC Bank',
     ifsc_code VARCHAR(20) DEFAULT 'AMCB0001234',
     status VARCHAR(20) NOT NULL DEFAULT 'VERIFIED',
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,

@@ -61,7 +61,7 @@ class ErrorBoundary extends Component {
               cursor: 'pointer'
             }}
           >
-            Reload AMC Bank
+            Reload ARBC Bank
           </button>
         </div>
       );

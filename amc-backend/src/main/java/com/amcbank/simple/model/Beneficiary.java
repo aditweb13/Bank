@@ -28,7 +28,7 @@ public class Beneficiary {
     private String beneficiaryName;
 
     @Column(name = "bank_name")
-    private String bankName = "AMC Bank";
+    private String bankName = "ARBC Bank";
 
     @Column(name = "ifsc_code")
     private String ifscCode = "AMCB0001234";
@@ -46,7 +46,7 @@ public class Beneficiary {
         this.customer = customer;
         this.accountNumber = accountNumber;
         this.beneficiaryName = beneficiaryName;
-        this.bankName = bankName != null ? bankName : "AMC Bank";
+        this.bankName = bankName != null ? bankName : "ARBC Bank";
         this.ifscCode = ifscCode != null ? ifscCode : "AMCB0001234";
     }
 

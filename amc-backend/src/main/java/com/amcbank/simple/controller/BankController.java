@@ -27,7 +27,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api")
-@Tag(name = "AMC Bank API", description = "Enterprise Banking REST Endpoints")
+@Tag(name = "ARBC Bank API", description = "Enterprise Banking REST Endpoints")
 public class BankController {
 
     private final BankService service;

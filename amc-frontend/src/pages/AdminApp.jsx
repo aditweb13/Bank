@@ -47,7 +47,7 @@ export default function AdminApp({ onLogout }) {
         <div className="sidebar-logo">
           <div className="sidebar-logo-icon">A</div>
           <div>
-            <div className="sidebar-logo-text">AMC Bank</div>
+            <div className="sidebar-logo-text">ARBC Bank</div>
             <div className="sidebar-logo-sub">Admin Portal</div>
           </div>
         </div>

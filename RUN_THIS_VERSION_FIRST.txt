@@ -1,4 +1,4 @@
-AMC BANK DAY 9 FINAL INTEGRATED PROJECT
+ARBC BANK DAY 9 FINAL INTEGRATED PROJECT
 
 1. Create PostgreSQL database amc_bank_customer_login.
 2. Import backend folder into Eclipse as Existing Maven Project.

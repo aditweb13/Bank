@@ -1,4 +1,4 @@
-# 🏦 AMC Bank – Enterprise Digital Banking Platform
+# 🏦 ARBC Bank – Enterprise Digital Banking Platform
 
 ![Java](https://img.shields.io/badge/Java-17-orange.svg)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.4-brightgreen.svg)
@@ -9,7 +9,7 @@
 ![Vite](https://img.shields.io/badge/Vite-5-purple.svg)
 ![Vitest](https://img.shields.io/badge/Testing-Vitest-yellow.svg)
 
-**AMC Bank** is a full-featured, enterprise-grade BFSI (Banking, Financial Services, and Insurance) digital banking web application built with **Java 17**, **Spring Boot 3.3.4**, **Spring Security + JWT**, **Spring Data JPA**, **Flyway Database Migrations**, **PostgreSQL**, and a modern **React 18 + Vite** frontend.
+**ARBC Bank** is a full-featured, enterprise-grade BFSI (Banking, Financial Services, and Insurance) digital banking web application built with **Java 17**, **Spring Boot 3.3.4**, **Spring Security + JWT**, **Spring Data JPA**, **Flyway Database Migrations**, **PostgreSQL**, and a modern **React 18 + Vite** frontend.
 
 ---
 
@@ -32,7 +32,7 @@
 
 ## 🌟 Overview
 
-AMC Bank provides an end-to-end digital banking experience for customers and banking administrators. It supports real-time dual-ledger fund transfers, maker-checker cash deposit approvals, term/fixed deposits with premature closure logic, automated loan eligibility evaluations, reducing-balance EMI calculators, and administrative customer onboarding.
+ARBC Bank provides an end-to-end digital banking experience for customers and banking administrators. It supports real-time dual-ledger fund transfers, maker-checker cash deposit approvals, term/fixed deposits with premature closure logic, automated loan eligibility evaluations, reducing-balance EMI calculators, and administrative customer onboarding.
 
 ---
 

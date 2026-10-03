@@ -1,4 +1,4 @@
-﻿-- AMC Bank Database Migration V2__seed_data.sql
+-- ARBC Bank Database Migration V2__seed_data.sql
 
 -- Seed Admin User (Username: admin, Password: admin123)
 INSERT INTO users (username, password_hash, role)

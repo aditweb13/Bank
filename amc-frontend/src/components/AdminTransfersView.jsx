@@ -53,7 +53,7 @@ export default function AdminTransfersView() {
         <div>
           <div className="section-title">All Bank Transfers</div>
           <div className="section-subtitle">
-            Audited ledger of all customer funds transfers executed across AMC Bank.
+            Audited ledger of all customer funds transfers executed across ARBC Bank.
           </div>
         </div>
         <button className="btn btn-secondary btn-sm" onClick={loadData}>

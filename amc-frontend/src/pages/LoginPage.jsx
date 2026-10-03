@@ -36,7 +36,7 @@ export default function LoginPage() {
     <div className="login-page">
       <div className="login-branding">
         <div className="login-brand-icon">A</div>
-        <div className="login-brand-name">AMC Bank</div>
+        <div className="login-brand-name">ARBC Bank</div>
         <div className="login-brand-sub">
           Next-generation digital banking platform — secure, fast, and built for the modern era.
         </div>

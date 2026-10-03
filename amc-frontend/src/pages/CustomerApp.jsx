@@ -66,7 +66,7 @@ export default function CustomerApp({ onLogout }) {
         <div className="sidebar-logo">
           <div className="sidebar-logo-icon">A</div>
           <div>
-            <div className="sidebar-logo-text">AMC Bank</div>
+            <div className="sidebar-logo-text">ARBC Bank</div>
             <div className="sidebar-logo-sub">Customer Portal</div>
           </div>
         </div>
@@ -1493,7 +1493,7 @@ function BeneficiariesView() {
   const [beneficiaries, setBeneficiaries] = useState([]);
   const [loading, setLoading]   = useState(true);
   const [modal, setModal]       = useState(null);
-  const [form, setForm]         = useState({ name:'', accountNumber:'', bankName:'AMC Bank', ifscCode:'' });
+  const [form, setForm]         = useState({ name:'', accountNumber:'', bankName:'ARBC Bank', ifscCode:'' });
   const [saving, setSaving]     = useState(false);
   const [delId, setDelId]       = useState(null);
 
@@ -1532,7 +1532,7 @@ function BeneficiariesView() {
           <div className="section-title">Beneficiaries</div>
           <div className="section-subtitle">Saved recipients for quick fund transfers</div>
         </div>
-        <button className="btn btn-primary" onClick={() => { setForm({ name:'', accountNumber:'', bankName:'AMC Bank', ifscCode:'' }); setModal('add'); }}>
+        <button className="btn btn-primary" onClick={() => { setForm({ name:'', accountNumber:'', bankName:'ARBC Bank', ifscCode:'' }); setModal('add'); }}>
           + Add Beneficiary
         </button>
       </div>
@@ -1724,7 +1724,7 @@ function FixedDepositsView() {
 
       {/* Rate Card */}
       <div className="card mb-6" style={{ background: 'linear-gradient(135deg, var(--brand-900), var(--brand-700))', color: 'white', border: 'none' }}>
-        <div className="text-sm font-semibold mb-3" style={{ opacity: .8 }}>Current AMC Bank FD Interest Slabs (Quarterly Compounding)</div>
+        <div className="text-sm font-semibold mb-3" style={{ opacity: .8 }}>Current ARBC Bank FD Interest Slabs (Quarterly Compounding)</div>
         <div className="flex gap-4 flex-wrap">
           {Object.entries(rates).map(([months, r]) => (
             <div key={months} style={{ textAlign: 'center', minWidth: 80 }}>

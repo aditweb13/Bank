@@ -420,7 +420,7 @@ public class BankService {
             document.open();
 
             Font headerFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 16);
-            Paragraph title = new Paragraph("AMC Bank - Account Statement", headerFont);
+            Paragraph title = new Paragraph("ARBC Bank - Account Statement", headerFont);
             title.setAlignment(Element.ALIGN_CENTER);
             document.add(title);
             document.add(new Paragraph("Generated on: " + LocalDateTime.now().toString()));
